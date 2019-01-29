@@ -16,7 +16,7 @@ final class Cache<T,V>{
 	    return cache.get(key);
 	}
 	else{
-	    V obj = constructor(key);
+	    V obj = constructor.apply(key);
 	    cache.put(key, obj);
 	    return obj;
 	}

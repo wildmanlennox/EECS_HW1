@@ -34,5 +34,6 @@ public final class Connector extends AbstractToken{
 	    return "(";
 	if(type == TerminalSymbol.CLOSE)
 	    return ")";
+	return "";
     }
 }
