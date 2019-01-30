@@ -29,8 +29,8 @@ public final class InternalNode implements Node {
     public List<Token> toList()
     {
         List<Token> internal = new LinkedList<Token>();
-        for (Node element: children)
-            internal.add(element.toList());
+        internal.add(children.get(0).toList().get(0));
+        return internal;
     }
     
     private String output = null;

@@ -12,37 +12,37 @@ import java.util.*;
  */
 public final class LeafNode implements Node {
     
-    private final Token = null;
+    private final Token token;
     
     //constructor
     private LeafNode (Token coin)
     {
-        Token = coin;
+        token = coin;
     }
     
     //token getter
     public Token getToken()
     {
-        return Token;
+        return token;
     }
     
     public LeafNode build()
     {
-        if (Token != null)
-            return new LeafNode(Token);
+        if (token != null)
+            return new LeafNode(token);
         else
             throw new NullPointerException(); 
     }
     
     public String toString()
     {
-        return "[" + Token.toString() + ",";
+        return "[" + token.toString() + ",";
     }
     
     public List<Token> toList()
     {
         List<Token> leaf = new LinkedList<Token>();
-        leaf.add(Token);
+        leaf.add(token);
         return leaf;
     }
     
