@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jsc126_law136;
+package edu.cwru.jsc126_law136.parser;
 import java.util.*;
 
 /**
